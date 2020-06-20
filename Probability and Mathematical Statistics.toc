@@ -1,0 +1,17 @@
+\babel@toc {nil}{}
+\contentsline {chapter}{符号说明}{i}{chapter*.1}%
+\contentsline {chapter}{\numberline {1}概率论的基本概念}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}随机现象与随机试验}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}样本空间,随机事件}{2}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}样本空间}{2}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}随机事件}{2}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}事件间的关系与事件的运算}{3}{subsection.1.2.3}%
+\contentsline {section}{\numberline {1.3}频率与概率}{4}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}频率}{4}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}概率}{5}{subsection.1.3.2}%
+\contentsline {subsubsection}{等可能概型(古典概型)}{5}{B.1.3.2}%
+\contentsline {subsubsection}{几何概型}{7}{F.1.3.3}%
+\contentsline {section}{\numberline {1.4}独立试验概型}{7}{section.1.4}%
+\contentsline {chapter}{附录}{8}{B.1.4.1}%
+\contentsline {section}{索引}{8}{section*.5}%
+\contentsfinish 

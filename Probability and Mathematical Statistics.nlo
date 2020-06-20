@@ -1,0 +1,17 @@
+\nomenclatureentry{a\colorbox{f8766d}{\qquad} @[{\colorbox{f8766d}{\qquad} }]\begingroup Color \texttt{\#EA7500}\nomeqref {0.0.0}|nompageref}{I}
+\nomenclatureentry{a\colorbox{1a9850}{\qquad}@[{\colorbox{1a9850}{\qquad}}]\begingroup Color \texttt{\#0097e6}\nomeqref {0.0.0}|nompageref}{I}
+\nomenclatureentry{a\colorbox{ffa725}{\qquad}@[{\colorbox{ffa725}{\qquad}}]\begingroup Color \texttt{\#1289A7}\nomeqref {0.0.0}|nompageref}{I}
+\nomenclatureentry{a\colorbox{2a7ae2}{\qquad} @[{\colorbox{2a7ae2}{\qquad} }]\begingroup Color \texttt{\#7158e2}\nomeqref {0.0.0}|nompageref}{I}
+\nomenclatureentry{a\colorbox{6a3d9a}{\qquad}@[{\colorbox{6a3d9a}{\qquad}}]\begingroup Color \texttt{\#ED4C67}\nomeqref {0.0.0}|nompageref}{I}
+\nomenclatureentry{a\colorbox{53a9ab}{\qquad}@[{\colorbox{53a9ab}{\qquad}}]\begingroup Color \texttt{\#007500}\nomeqref {0.0.0}|nompageref}{I}
+\nomenclatureentry{a\colorbox{titlepurple}{\qquad }@[{\colorbox{titlepurple}{\qquad }}]\begingroup Color \texttt{\#5758BB}\nomeqref {0.0.0}|nompageref}{I}
+\nomenclatureentry{a\colorbox{titlepurpleb}{\qquad}@[{\colorbox{titlepurpleb}{\qquad}}]\begingroup Color \texttt{\#833471}\nomeqref {0.0.0}|nompageref}{I}
+\nomenclatureentry{a\colorbox{titlepurplec}{\qquad}@[{\colorbox{titlepurplec}{\qquad}}]\begingroup Color \texttt{\#006266}\nomeqref {0.0.0}|nompageref}{I}
+\nomenclatureentry{a\colorbox{md}{\qquad}@[{\colorbox{md}{\qquad}}]\begingroup Color \texttt{\#EA2027}\nomeqref {0.0.0}|nompageref}{I}
+\nomenclatureentry{a\colorbox{purple}{\qquad}@[{\colorbox{purple}{\qquad}}]\begingroup Color \texttt{\#bf0040}\nomeqref {0.0.0}|nompageref}{I}
+\nomenclatureentry{a$ A\subset B $@[{$ A\subset B $}]\begingroup 事件$ B $包含事件$ A $\nomeqref {1.2.0}|nompageref}{3}
+\nomenclatureentry{a$ \a\cup\b $@[{$ \a\cup\b $}]\begingroup 事件\a 与事件\b 的和事件\nomeqref {1.2.0}|nompageref}{3}
+\nomenclatureentry{a$ \a\cap\b $, $ \a\b $@[{$ \a\cap\b $, $ \a\b $}]\begingroup 事件\a 与事件\b 的积事件\nomeqref {1.2.0}|nompageref}{3}
+\nomenclatureentry{a$ A-B $, $ \a\backslash\b $@[{$ A-B $, $ \a\backslash\b $}]\begingroup 事件\a 与事件\b 的差事件\nomeqref {1.2.0}|nompageref}{4}
+\nomenclatureentry{a$ \a\cap\b=\varnothing $@[{$ \a\cap\b=\varnothing $}]\begingroup 事件\a 与\b 互不相容(互斥)\nomeqref {1.2.0}|nompageref}{4}
+\nomenclatureentry{a$ \overline{A} $@[{$ \overline{A} $}]\begingroup 事件\a 的对立事件(逆事件)\nomeqref {1.2.0}|nompageref}{4}
