@@ -1,5 +1,4 @@
 # <font color=orange>概率论</font> <font color=grey>课本</font> <font color=#0099ff>重要知识点整理与解读</font>
-----
 #### Shevon Kuan
 ## 简介
 
