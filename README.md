@@ -1,129 +1,169 @@
-# 概率论课本重要知识点整理与解读
+# <font color=orange>概率论</font> <font color=grey>课本</font> <font color=#0099ff>重要知识点整理与解读</font>
 ----
 #### Shevon Kuan
-## 介绍
+## 简介
 
-这是我基于 Latex2$\varepsilon$ 的数学笔记,这是一个系列并将使用一致的模板,将来我可能会对该模板作独立开源
-![elementary](https://raw.githubusercontent.com/Mayccoll/Gogh/master/images/demos/themes.gif)
+这是我基于 Latex2$\varepsilon$ 的数学笔记,它是一个系列并将使用一致的模板(目前仅部分开源),将来我可能会对该模板作独立开源处理.
+
+**Demo:**
+![element](https://github.com/ShevonKuan/Probability-and-Mathematical-Statistics/raw/master/readme_image/main.png)
+
 
 ----
 
-<br/>
-<br/>
-
-## Pre-Install
-
-```bash
-  $ sudo apt-get install dconf-cli uuid-runtime
+## 编译介绍
+```Latex``` 编译链```XeLaTex -> bibtex -> makeindex -> texindy -> xeLaTex重复编译```对应```VS Code```设置如下:
+```json
+"latex-workshop.latex.recipes": [
+    {
+        "name": "完整编译链",
+        "tools": [
+            "xelatex",
+            "bibtex",
+            "makeindex",
+            "texindy",
+            "xelatex",
+            "xelatex"
+        ]
+    },
+]
 ```
-
-## [Install](https://github.com/Mayccoll/Gogh/blob/master/content/install.md)
-
-**1. Just copy and paste this one-line command:**
-
-```bash
-  $  bash -c  "$(wget -qO- https://git.io/vQgMr)"
+各命令具体配置如下：
+```json
+"latex-workshop.latex.tools": [
+    {
+        // 编译工具和命令
+        "name": "xelatex",
+        "command": "xelatex",
+        "args": [
+            "-synctex=1",
+            "-interaction=nonstopmode",
+            "%DOCFILE%"
+        ]
+    },
+    {
+        "name": "bibtex",
+        "command": "bibtex",
+        "args": [
+            "%DOCFILE%"
+        ]
+    },
+    {
+        "name": "texindy",
+        "command": "texindy",
+        "args": [
+            "%DOCFILE%.idx"
+        ]
+    },
+    {
+        "name": "makeindex",
+        "command": "makeindex",
+        "args": [
+            "%DOCFILE%.nlo",
+            "-s",
+            "nomencl.ist",
+            "-o",
+            "%DOCFILE%.nls"
+        ]
+    }
+],
 ```
+----
+## TODO:
+列出该todo的目的是为了让我能够及时更新代码呐,不要天天顾着打游戏看视频.
+- 6/22 - 6/28 完成第二章和第三章
+- 优化图片储存架构
+- 划分主文档
+**目前进度 7%:**<font size=1 color=Lightgrey><font size=2 color=green>
+- 第一章 概率论的基本概念
+1 随机试验
+2 样本空间、随机事件
+3 频率与概率
+4 等可能概型（古典概型）
+5 条件概率
+6 独立性<font size=3 color=orange> ⇦ 写到这里呐</font>
+</font>
+- 第二章 随机变量及其分布
+1 随机变量
+2 离散型随机变量及其分布律
+3 随机变量的分布函数
+4 连续型随机变量及其概率密度
+5 随机变量的函数的分布
 
-Or, if you are a Mac user:
+- 第三章 多维随机变量及其分布
+1 二维随机变量
+2 边缘分布
+3 条件分布
+4 相互独立的随机变量
+5 两个随机变量的函数的分布
 
-```bash
-  $  bash -c  "$(curl -sLo- https://git.io/vQgMr)"
-```
+- 第四章 随机变量的数字特征
+1 数学期望
+2 方差
+3 协方差及相关系数
+4 矩、协方差矩阵
 
-**2. Select the color theme installed from the terminal**
+- 第五章 大数定律及中心极限定理
+1 大数定律
+2 中心极限定理
 
-**DEMO:**
+- 第六章 样本及抽样分布
+1 随机样本
+2 直方图和箱线图
+3 抽样分布
 
-![gogh-demo-profile](https://raw.githubusercontent.com/Mayccoll/Gogh/master/images/demos/gogh-demo-profile.gif)
+- 第七章 参数估计
+1 点估计
+2 基于截尾样本的最大似然估计
+3 估计量的评选标准
+4 区间估计
+5 正态总体均值与方差的区间估计
+6 （0-1）分布参数的区间估计
+7 单侧置信区间
 
-<br/>
-<br/>
+- 第八章 假设检验
+1 假设检验
+2 正态总体均值的假设检验
+3 正态总体方差的假设检验
+4 置信区间与假设检验之间的关系
+5 样本容量的选取
+6 分布拟合检验
+7 秩和检验
+8 假设检验问题的p值法
 
+- 第九章 方差分析及回归分析
+1 单因素试验的方差分析
+2 双因素试验的方差分析
+3 一元线性回归
+4 多元线性回归
 
-## [Themes](https://mayccoll.github.io/Gogh/)
+- 第十章 bootstrap方法
+1 非参数bootstrap方法
+2 参数bootstrap方法
 
-We have lots of themes. Check them out [here](https://mayccoll.github.io/Gogh/)!
+- 第十一章 在数理统计中应用Excel软件
+1 概述
+2 箱线图
+3 假设检验
+4 方差分析
+5 一元线性回归
+6 bootstrap方法、宏、VBA
 
+- 第十二章 随机过程及其统计描述
+1 随机过程的概念
+2 随机过程的统计描述
+3 泊松过程及维纳过程
 
-<br/>
-<br/>
+- 第十三章 马尔可夫链
+1 马尔可夫过程及其概率分布
+2 多步转移概率的确定
+3 遍历性
 
-
-
-## [How to](https://github.com/Mayccoll/Gogh/blob/master/content/howto.md)
-
-If you want to create your own color scheme or contribute to the project, [start here](https://github.com/Mayccoll/Gogh/blob/master/content/howto.md).
-
-
-
-<br/>
-<br/>
-
-
-## Credits:
-
-- [4bit](https://ciembor.github.io/4bit/)
-- [Chalk](https://github.com/chalk/chalk) by [Sindre Sorhus](https://github.com/sindresorhus)
-- [Dracula](https://github.com/dracula/dracula-theme) by [Zeno Rocha](https://github.com/zenorocha)
-- [Elementary OS](https://elementary.io/)
-- [Fairy Floss](https://github.com/sailorhg/fairyfloss)
-- [Flat Remix](https://github.com/daniruiz/flat-remix)
-- [Flat UI Terminal Theme](https://dribbble.com/shots/1021755-Flat-UI-Terminal-Theme)
-- [Gooey](http://simey.me/editor-themes/) by [Matt Harris](https://github.com/mdh34)
-- [Gotham](https://github.com/whatyouhide/vim-gotham) by [Andrea Leopardi](https://github.com/whatyouhide)
-- [Gruvbox](https://github.com/morhetz/gruvbox) by [Pavel Pertsev](https://github.com/morhetz)
-- [Hemisu](https://noahfrederick.com/log/hemisu-for-os-x-terminal/) by [Noah Frederick](https://github.com/noahfrederick)
-- [kokuban](https://github.com/ygkn/kokuban) by [ygkn](https://github.com/ygkn)
-- [Monokai](https://web.archive.org/web/20161117102850/https://www.monokai.nl/blog/2006/07/15/textmate-color-theme) by [Wimer Hazenberg](https://github.com/monokai)
-- [Ocean](https://github.com/fabianperez/ocean-dark-iterm) by [Fabian Perez](https://github.com/fabianperez)
-- [One Dark & Light theme set](https://github.com/nathanbuchar/one-dark-terminal) by [Nathan Buchar](https://github.com/nathanbuchar)
-- [Peppermint](https://noahfrederick.com/log/lion-terminal-theme-peppermint/) by [Noah Frederick](https://github.com/noahfrederick)
-- [SMYCK](http://color.smyck.org/) by [John-Paul Bader](https://github.com/hukl)
-- [Snazzy](https://github.com/sindresorhus/hyper-snazzy) by [Sindre Sorhus](https://github.com/sindresorhus)
-- [Solarized](https://ethanschoonover.com/solarized) by [Ethan Schoonover](https://github.com/altercation)
-- [Srcery](https://github.com/roosta/vim-srcery) by [Daniel Berg](https://github.com/roosta)
-- [Summer Pop](https://github.com/guillermoap/Gogh) by [Guillermo Aguirre](https://github.com/guillermoap)
-- [SynthWave '84 ](https://github.com/robb0wen/synthwave-vscode)
-- [Terminal Sexy](https://terminal.sexy) by [George Czabania](https://github.com/stayradiated)
-- [Tilix](https://github.com/storm119/Tilix-Themes)
-- [Tomorrow color theme set](https://github.com/chriskempson/tomorrow-theme) by [Chris Kempson](https://github.com/chriskempson)
-- Material theme by [Mitchel van Eijgen](https://gist.github.com/mvaneijgen/4c56701215847dd5ddcf) and [Liu Xinan](https://gist.github.com/xinan/ca2b82fef6aaa0d1e099)
-
-<br/>
-<br/>
-
-
+- 第十四章 平稳随机过程
+1 平稳随机过程的概念
+2 各态历经性
+3 相关函数的性质
+4 平稳随机过程的功率谱密度
+</font>
 ## Contributors:
 
-- [@contributors](https://github.com/Mayccoll/Gogh/graphs/contributors)
-
-<br/>
-<br/>
-
-## Why Gogh?
-
-There is no blue without yellow and without orange.
--- [Vincent Van Gogh](https://en.wikipedia.org/wiki/Vincent_van_Gogh)
-
-<br/>
-<br/>
-
-## Author
-
-- Miguel D. Quintero - [Lanet.co](https://lanet.co)
-
-<br/>
-<br/>
-
-
-## Mentions
-
-- [Awesome-Shell](https://github.com/alebcay/awesome-shell)
-- [Hipertextual](https://hipertextual.com/archivo/2014/11/4bit/)
-- [MuyLinux](https://www.muylinux.com/2015/06/06/ping-91)
-- [Reddit - elementaryos](https://www.reddit.com/r/elementaryos/comments/3ivnb7/how_to_change_terminals_colors/)
-
-## Themes in `json` format
-
-https://gist.github.com/rapgru/09b449285231d18f4e4536c5f48fc927
